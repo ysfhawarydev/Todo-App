@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding : 0 ;
+    margin : 0 ;
+    box-sizing : border-box ;
+}
+
+body {
+    height : 100vh ;
+    text-align : center ;
+    background : linear-gradient( rgb(80, 179, 255) , rgb(137, 204, 255) , white ) ;
+    background-repeat : no-repeat ;
+    background-size : cover ;
+    transition : .5s ;
+}
+
+.all {
+    margin-top : 15% ;
+    display : inline-flex ;
+    flex-direction : column ;
+    place-content : center ;
+    border : 1px solid rgb(0, 145, 255) ;
+    border-radius : 20px ;
+    box-shadow : 5px 5px 5px 5px rgb(137, 204, 255) ;
+    padding-inline : 2rem ;
+    padding-block : 2rem ;
+    transition : .2s ;
+    position : relative ;
+}
+
+.all:hover {
+    box-shadow : 20px 20px 20px 20px rgb(137, 204, 255) ;
+    transform : scale( 1.02 ) ;
+}
+
+.mode {
+    background : transparent ;
+    border : transparent ;
+    font-size : 1.5rem ;
+    color : gold ;
+    transition : .2s ;
+    position : absolute ;
+    left : 335px ;
+}
+
+.mode:hover {
+    cursor : pointer ;
+    color : rgb(228, 194, 0) ;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color : rgb(0, 145, 255) ;
+    text-shadow : 2px 1px 1px ;
+    font-weight : 500 ;
+    font-size : 3rem ;
+    display : inline-block ;
+    padding-block : 1rem ;
+    position : relative ;
+}
+
+h1::before {
+    content : '' ;
+    position : absolute ;
+    background-color : rgb(100, 188, 255) ;
+    width : 100px ;
+    height : 3px ;
+    top : 80px ;
+    left : 40px ;
+}
+
+h1::after {
+    content : '' ;
+    position : absolute ;
+    background-color : rgb(100, 188, 255) ;
+    width : 50px ;
+    height : 2px ;
+    top : 90px ;
+    right : 60px ;
+}
+
+.firstP {
+    font-family: "Oswald", sans-serif;
+    font-weight : 300 ;
+    font-size : 1.3rem ;
+    padding-block : 1rem ;
+}
+
+label {
+    font-family: "Oswald", sans-serif;
+    font-weight : 300 ;
+    color : rgb(0, 145, 255) ;
+    font-size : 1.5rem ;
+
+}
+
+input {
+    padding : 1rem ;
+    transition : .2s ;
+    border : 1px solid rgb(173, 170, 170) ;
+    border-radius : 15px ;
+    margin-block : 1rem ;
+}
+
+input:hover {
+    border : 2px solid rgb(0, 145, 255) ;
+    box-shadow : 2px 4px 0.8px ;
+    transform : translateY( -5px ) ;
+}
+
+input:focus {
+    border : 2px solid rgb(0, 106, 255) ;
+    outline : none ;
+}
+
+input::placeholder {
+    font-size : 1.5rem ;
+}
+
+.btn {
+    transition : .2s ;
+    background-color : rgb(0, 145, 255) ;
+    color : white ;
+    border : transparent ;
+    padding-inline : 1rem ;
+    padding-block : 0.7rem ;
+    border-radius : 10px ;
+    font-size : 1.2rem ;
+}
+
+.btn:hover {
+    cursor : pointer ;
+    transform : translateY( -5px ) ;
+}
+
+.secondP {
+    font-family: "Oswald", sans-serif;
+    font-weight : 300 ;
+    font-size : 1.3rem ;
+    padding-top : 1rem ;
+}
+
+a {
+    color : rgb(0, 145, 255) ;
+    transition : .2s ;
+}
+
+a:hover {
+    color : rgb(100, 188, 255) ;
+}
+
+.btn2 {
+    transition : .2s ;
+    background-color : rgb(0, 145, 255) ;
+    color : white ;
+    border : transparent ;
+    padding-inline : 0.8rem ;
+    padding-block : 0.5rem ;
+    border-radius : 10px ;
+    font-size : 1rem ;
+    margin-left : 2rem ;
+}
+
+.btn2:hover {
+    cursor : pointer ;
+    transform : translateY( -2px ) ;
+}
+
+body.dark {
+    background: linear-gradient(
+        rgb(15, 23, 42),
+        rgb(30, 41, 59),
+        rgb(51, 65, 85)
+    );
+    color: #f8fafc;
+}
+
+body.dark .all {
+    background-color: #1e293b;
+    border: 1px solid #3b82f6;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+}
+
+body.dark h1 {
+    color: #60a5fa;
+    text-shadow: 0 0 10px rgba(96, 165, 250, .5);
+}
+
+body.dark h1::before,
+body.dark h1::after {
+    background-color: #60a5fa;
+}
+
+body.dark label {
+    color: #93c5fd;
+}
+
+body.dark .firstP,
+body.dark .secondP,
+body.dark #output,
+body.dark #countTasks {
+    color: #e2e8f0;
+}
+
+body.dark input {
+    background-color: #334155;
+    color: white;
+    border: 1px solid #475569;
+}
+
+body.dark input::placeholder {
+    color: #94a3b8;
+}
+
+body.dark .btn,
+body.dark .btn2 {
+    background-color: #2563eb;
+}
+
+body.dark .btn:hover,
+body.dark .btn2:hover {
+    background-color: #3b82f6;
+}
+
+body.dark a {
+    color: #60a5fa;
+}
+
+body.dark a:hover {
+    color: #93c5fd;
+}
+
+body.dark .mode {
+    color: #facc15;
+}
+
+.mode i {
+    transition: .4s;
+}
+
+.mode:hover i {
+    transform: rotate(25deg) scale(1.15);
+}
